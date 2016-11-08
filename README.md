@@ -3,7 +3,7 @@ Meteor Todos Example with separate Client and Server application for testing hot
 
 This uses a modified meteor from: https://github.com/Richie765/meteor
 
-This addresses this issue: meteor/meteor#3815
+This addresses this issue: https://github.com/meteor/meteor/issues/3815
 
 The following changes have been made:
 * Hot code push will come from `ROOT_URL`
