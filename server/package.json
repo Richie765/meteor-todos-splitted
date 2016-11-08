@@ -1,0 +1,11 @@
+{
+  "name": "simple-todos-server",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --port 4000"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}
