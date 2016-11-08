@@ -3,6 +3,8 @@ Meteor Todos Example with separate Client and Server application for testing hot
 
 This uses a modified meteor from: https://github.com/Richie765/meteor
 
+This addresses this issue: meteor/meteor#3815
+
 The following changes have been made:
 * Hot code push will come from `ROOT_URL`
 * Will connect to server at `DDP_URL` (alias of `DDP_DEFAULT_CONNECTION_URL`)
