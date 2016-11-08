@@ -4,10 +4,10 @@ Meteor Todos Example with separate Client and Server application for testing hot
 This uses a modified meteor from: https://github.com/Richie765/meteor
 
 The following changes have been made:
-* Hot code push will come from ROOT_URL
-* Will connect to server at DDP_URL (alias of DDP_DEFAULT_CONNECTION_URL)
-* Added --mobile-root option to 'meteor run' and 'meteor build'
-* Changed 'meteor build --server' to be 'meteor build --mobile-server'
+* Hot code push will come from `ROOT_URL`
+* Will connect to server at `DDP_URL` (alias of `DDP_DEFAULT_CONNECTION_URL`)
+* Added `--mobile-root` option to `meteor run` and `meteor build`
+* Changed `meteor build --server` to be `meteor build --mobile-server`
 
 # Setting up
 Clone repo
@@ -22,19 +22,19 @@ ln -s meteor ~/bin/meteor-git
 
 When running locally with 'meteor run'
 * For server, just run as usual
-* For client (browser and mobile) use the modified meteor-git
-* For browser, use env vars DDP_URL to specify the server, use ROOT_URL to specify the root url, also used for hot code updates.
-* For mobile, specify the same vars, and use --mobile-server and --mobile-root with the same values to be compiled inside the App.
+* For client (browser and mobile) use the modified `meteor-git`
+* For browser, use env vars `DDP_URL` to specify the server, use `ROOT_URL` to specify the root url, also used for hot code push.
+* For mobile, specify the same vars, and use `--mobile-server` and `--mobile-root` with the same values to be compiled inside the App.
 
 Building and running a bundle, server
 * Build and run as usual
 
 Building a bundle, client part
-* Use the modified meteor-git
-* When building for mobile, specify the --mobile-server and --mobile-root, the initial values to be compiled inside the App.
+* Use the modified `meteor-git`
+* When building for mobile, specify the `--mobile-server` and `--mobile-root`, the initial values to be compiled inside the App.
 
 Running the bundle, client part
-* Set DDP_URL and ROOT_URL to the same values used when building
+* Set `DDP_URL` and `ROOT_URL` to the same values used when building
 
 # Test run locally
 
